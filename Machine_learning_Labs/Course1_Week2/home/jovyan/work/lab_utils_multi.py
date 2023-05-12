@@ -426,7 +426,7 @@ def gradient_descent_houses(X, y, w_in, b_in, cost_function, gradient_function, 
     
     w = copy.deepcopy(w_in)  #avoid modifying global w within function
     b = b_in
-    save_interval = np.ceil(num_iters/10000) # prevent resource exhaustion for long runs
+    save_interval = np.ceil(num_iters/100000) # prevent resource exhaustion for long runs
 
     print(f"Iteration Cost          w0       w1       w2       w3       b       djdw0    djdw1    djdw2    djdw3    djdb  ")
     print(f"---------------------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|")
