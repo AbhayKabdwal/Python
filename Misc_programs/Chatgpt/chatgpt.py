@@ -1,7 +1,7 @@
 import openai
 import time
 
-openai.api_key = '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'
+openai.api_key = ''
 
 question = input("Ques:  ")
 
